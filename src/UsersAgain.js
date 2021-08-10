@@ -17,7 +17,7 @@ const UsersAgain = () => {
 
   return (
     <div>
-      <h2>This is functional User API</h2>
+      <h2>Users</h2>
       <hr />
       <div>
         {user.map((users) => (
@@ -25,23 +25,19 @@ const UsersAgain = () => {
             <Table striped bordered hover size="sm" responsive>
               <thead>
                 <tr>
-                  <th>ID</th>
-                  <th>Name</th>
+                  <th>ID</th>                  
                   <th>User Name</th>
                   <th>Email</th>
                   <th>Website</th>
-                  <th>address</th>
-                 
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>{users.id}</td>
-                  <td> {users.name}</td>
                   <td> {users.username}</td>
                   <td>{users.email}</td>
                   <td>{users.website}</td>
-                  <td>{users.address.street}</td>
+                  
                 </tr>
               </tbody>
             </Table>
